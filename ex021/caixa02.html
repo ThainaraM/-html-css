@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 0%;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+       
+        }
+        nav {
+            background-color: rgba(168, 235, 235, 0.545);
+            padding: 2px;  
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.208); 
+        }
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.512);
+            border-radius: 30px;
+        }
+        article {
+            background-color: white;
+        }
+        article > aside {
+            background-color: beige;   
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci tempora amet dicta! Fuga ullam architecto distinctio, dolores modi quisquam eligendi? Sequi facere architecto porro, nihil commodi error molestias nobis ipsum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dolores nulla error! Id officiis recusandae laborum unde commodi. Voluptates, possimus ipsam sed expedita mollitia iusto a hic cumque ad adipisci.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius amet quas, nesciunt libero tempora magnam animi aperiam repellendus! Reiciendis voluptatum quis eligendi officia at, voluptates veritatis quibusdam. Quas, a laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo optio eaque omnis temporibus saepe, fugiat consectetur, eos praesentium quos fuga recusandae eius nobis quo aperiam ut quis est doloremque inventore.</p>
+                <aside>
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo o &copy; CursoemVideo</p>
+    </footer>
+    
+</body>
+</html>
