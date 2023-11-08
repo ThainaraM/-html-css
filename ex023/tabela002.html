@@ -11,6 +11,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         td, th {
             border: 1px solid black;
@@ -19,6 +26,14 @@
         thead, tfoot {
             background-color: rgb(119, 111, 111);
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top:-1px;
+            background-color: rgb(119, 111, 111);;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: bisque;
         }
         td.num{
             text-align: right;
@@ -29,6 +44,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
          TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -38,10 +54,11 @@
         -->
 
     <table>
+        <caption>População das Unidades Federativas</caption> 
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -156,10 +173,13 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">203.062.512</td>
             </tr>
         </tfoot>
     </table>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi id corrupti ex placeat maxime aliquam accusantium possimus odio porro sapiente soluta assumenda reiciendis quaerat praesentium tempora iste, autem nulla. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quos deserunt dignissimos dolores deleniti quisquam tempora ipsa aperiam natus asperiores? Ut, expedita commodi ab odit quod velit pariatur molestiae obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, officia? Facilis quis ex incidunt, ullam rerum vel quibusdam atque tenetur velit tempore sed? Tempora dignissimos quos illo facere repellendus quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, fugit! Doloribus aliquam enim, asperiores iste illum consectetur a ratione alias suscipit, error eaque id dicta nisi eum est in unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi id corrupti ex placeat maxime aliquam accusantium possimus odio porro sapiente soluta assumenda reiciendis quaerat praesentium tempora iste, autem nulla. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quos deserunt dignissimos dolores deleniti quisquam tempora ipsa aperiam natus asperiores? Ut, expedita commodi ab odit quod velit pariatur molestiae obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, officia? Facilis quis ex incidunt, ullam rerum vel quibusdam atque tenetur velit tempore sed? Tempora dignissimos quos illo facere repellendus quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, fugit! Doloribus aliquam enim, asperiores iste illum consectetur a ratione alias suscipit, error eaque id dicta nisi eum est in unde.</p>
 </body>
 </html>
